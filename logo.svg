@@ -1,40 +1,71 @@
-<svg width="360" height="120" viewBox="0 0 360 120" fill="none"
+<svg width="360" height="140" viewBox="0 0 360 140"
      xmlns="http://www.w3.org/2000/svg">
+  <style>
+    .text {
+      font-family: "Inter", sans-serif;
+      font-weight: 700;
+      opacity: 0;
+      animation: textIn 1.2s ease forwards;
+      animation-delay: 0.9s;
+    }
 
-  <!-- ICON -->
-  <g transform="translate(20,20)">
-    <!-- outer modules -->
-    <rect x="0" y="30" width="24" height="24" rx="4" fill="#4F46E5"/>
-    <rect x="36" y="0" width="24" height="24" rx="4" fill="#4F46E5"/>
-    <rect x="72" y="30" width="24" height="24" rx="4" fill="#4F46E5"/>
-    <rect x="36" y="60" width="24" height="24" rx="4" fill="#4F46E5"/>
+    .tagline {
+      font-family: "Inter", sans-serif;
+      opacity: 0;
+      animation: textIn 1.2s ease forwards;
+      animation-delay: 1.2s;
+    }
 
-    <!-- center -->
-    <rect x="36" y="30" width="24" height="24" rx="4" fill="#22C55E"/>
+    .box {
+      transform-origin: center;
+      opacity: 0;
+      animation: pop 0.6s ease forwards;
+    }
 
-    <!-- connectors -->
-    <line x1="24" y1="42" x2="36" y2="42" stroke="#94A3B8" stroke-width="2"/>
-    <line x1="48" y1="24" x2="48" y2="30" stroke="#94A3B8" stroke-width="2"/>
-    <line x1="60" y1="42" x2="72" y2="42" stroke="#94A3B8" stroke-width="2"/>
-    <line x1="48" y1="54" x2="48" y2="60" stroke="#94A3B8" stroke-width="2"/>
+    .b1 { animation-delay: 0.1s; }
+    .b2 { animation-delay: 0.25s; }
+    .b3 { animation-delay: 0.4s; }
+    .b4 { animation-delay: 0.55s; }
+
+    .line {
+      opacity: 0;
+      animation: fadeIn 0.6s ease forwards;
+      animation-delay: 0.7s;
+    }
+
+    @keyframes pop {
+      from { transform: scale(0.5); opacity: 0; }
+      to   { transform: scale(1); opacity: 1; }
+    }
+
+    @keyframes fadeIn {
+      to { opacity: 1; }
+    }
+
+    @keyframes textIn {
+      from { opacity: 0; transform: translateY(6px); }
+      to   { opacity: 1; transform: translateY(0); }
+    }
+  </style>
+
+  <!-- Icon -->
+  <g transform="translate(8, 12)">
+    <rect class="box b1" x="0"  y="40" width="26" height="26" rx="5" fill="#6366F1"/>
+    <rect class="box b2" x="34" y="18" width="26" height="26" rx="5" fill="#6366F1"/>
+    <rect class="box b3" x="68" y="40" width="26" height="26" rx="5" fill="#6366F1"/>
+    <rect class="box b4" x="34" y="68" width="26" height="26" rx="5" fill="#22C55E"/>
+
+    <line class="line" x1="26" y1="53" x2="34" y2="46" stroke="#94A3B8" stroke-width="2"/>
+    <line class="line" x1="26" y1="53" x2="34" y2="80" stroke="#94A3B8" stroke-width="2"/>
+    <line class="line" x1="60" y1="53" x2="68" y2="53" stroke="#94A3B8" stroke-width="2"/>
   </g>
 
-  <!-- TEXT -->
-  <text x="140" y="68"
-        font-size="48"
-        font-weight="700"
-        letter-spacing="2"
-        fill="#0F172A"
-        font-family="Inter, Segoe UI, Roboto, Arial, sans-serif">
+  <!-- Label -->
+  <text x="124" y="80" class="text" font-size="46" fill="#0F172A">
     DXEYS
   </text>
 
-  <!-- TAGLINE (optional) -->
-  <text x="142" y="92"
-        font-size="14"
-        fill="#64748B"
-        font-family="Inter, Segoe UI, Roboto, Arial, sans-serif">
-    Integrated Quality Management Platform
+  <text x="124" y="104" class="tagline" font-size="14" fill="#475569">
+    Integrated Quality Management
   </text>
-
 </svg>

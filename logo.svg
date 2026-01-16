@@ -1,0 +1,40 @@
+<svg width="360" height="120" viewBox="0 0 360 120" fill="none"
+     xmlns="http://www.w3.org/2000/svg">
+
+  <!-- ICON -->
+  <g transform="translate(20,20)">
+    <!-- outer modules -->
+    <rect x="0" y="30" width="24" height="24" rx="4" fill="#4F46E5"/>
+    <rect x="36" y="0" width="24" height="24" rx="4" fill="#4F46E5"/>
+    <rect x="72" y="30" width="24" height="24" rx="4" fill="#4F46E5"/>
+    <rect x="36" y="60" width="24" height="24" rx="4" fill="#4F46E5"/>
+
+    <!-- center -->
+    <rect x="36" y="30" width="24" height="24" rx="4" fill="#22C55E"/>
+
+    <!-- connectors -->
+    <line x1="24" y1="42" x2="36" y2="42" stroke="#94A3B8" stroke-width="2"/>
+    <line x1="48" y1="24" x2="48" y2="30" stroke="#94A3B8" stroke-width="2"/>
+    <line x1="60" y1="42" x2="72" y2="42" stroke="#94A3B8" stroke-width="2"/>
+    <line x1="48" y1="54" x2="48" y2="60" stroke="#94A3B8" stroke-width="2"/>
+  </g>
+
+  <!-- TEXT -->
+  <text x="140" y="68"
+        font-size="48"
+        font-weight="700"
+        letter-spacing="2"
+        fill="#0F172A"
+        font-family="Inter, Segoe UI, Roboto, Arial, sans-serif">
+    DXEYS
+  </text>
+
+  <!-- TAGLINE (optional) -->
+  <text x="142" y="92"
+        font-size="14"
+        fill="#64748B"
+        font-family="Inter, Segoe UI, Roboto, Arial, sans-serif">
+    Integrated Quality Management Platform
+  </text>
+
+</svg>
